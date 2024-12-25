@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() { }
+
+  slideOpts = {
+    slidesPerView: 1.5
+  }
 
 }

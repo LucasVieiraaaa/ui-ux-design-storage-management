@@ -1,20 +1,62 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="apps"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-buttons class="bordered" fill="solid" color="light">
+        <ion-icon class="medium-icon" name="notifications"></ion-icon>
+      </ion-buttons>
+    </ion-buttons>
   </ion-toolbar>
+
+<ion-item lines="none">
+  <ion-avatar slot="start">
+    <img src="https://portfolio-lucas-vieira-souza-fullstack-dev.vercel.app/imgs.project/imgs/profilepic.jpeg" alt="avatar">
+  </ion-avatar>
+  <ion-label>
+    <p>Hello,</p>
+    <h3>Guest-2501</h3>
+  </ion-label>
+</ion-item>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="slideOpts">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img class="custom-img-size" src="https://cfl.dropboxstatic.com/static/images/logo_catalog/twitter-card-glyph_m1%402x.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-card-title class="ion-margin-bottom">Dropbox</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">10/20GB</ion-card-subtitle>
+            <ion-progress-bar value="0.5" color="custom"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img  class="custom-img-size" src="https://www.freeiconspng.com/uploads/google-drive-icon-18.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-card-title class="ion-margin-bottom">Google Drive</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">40/50GB</ion-card-subtitle>
+            <ion-progress-bar value="0.8" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
   </div>
 </ion-content>
