@@ -14,7 +14,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA] // Adicionado para suportar Web Components
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
   
 })
 export class AppModule {}
